@@ -1,4 +1,9 @@
 objects = {
+  { name = "trafficjams", type = "ParkingStall", x = 447, y = 74, z = 0, width = 17, height = 28, properties = { Direction = "S" } },
+  { name = "trafficjamn", type = "ParkingStall", x = 447, y = 117, z = 0, width = 15, height = 24, properties = { Direction = "N" } },
+  { name = "trafficjamw", type = "ParkingStall", x = 450, y = 102, z = 0, width = 32, height = 15, properties = { Direction = "W" } },
+  { name = "trafficjame", type = "ParkingStall", x = 423, y = 102, z = 0, width = 27, height = 15, properties = { Direction = "E" } },
+  { name = "trafficjamn", type = "ParkingStall", x = 447, y = 0, z = 0, width = 13, height = 54, properties = { Direction = "N" } },
   { name = "", type = "Nav", x = 462, y = 1842, z = 0, width = 138, height = 8 },
   { name = "", type = "Nav", x = 545, y = 1850, z = 0, width = 6, height = 80 },
   { name = "", type = "Nav", x = 551, y = 1924, z = 0, width = 49, height = 6 },

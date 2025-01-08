@@ -119,7 +119,23 @@
  <objectgroup name="RoomTone" color="#0000ff" defaulttype="RoomTone"/>
  <objectgroup name="ZombiesType" color="#555500"/>
  <cell x="0" y="0" map="desertbase_0_0.tmx"/>
- <cell x="1" y="0" map="desertbase_1_0.tmx"/>
+ <cell x="1" y="0" map="desertbase_1_0.tmx">
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="147" y="74" level="0" width="17" height="28">
+   <template name="ParkingStallS"/>
+  </object>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="147" y="117" level="0" width="15" height="24">
+   <template name="ParkingStallN"/>
+  </object>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="150" y="102" level="0" width="32" height="15">
+   <template name="ParkingStallW"/>
+  </object>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="123" y="102" level="0" width="27" height="15">
+   <template name="ParkingStallE"/>
+  </object>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="147" y="0" level="0" width="13" height="54">
+   <template name="ParkingStallN"/>
+  </object>
+ </cell>
  <cell x="2" y="0" map="desertbase_2_0.tmx"/>
  <cell x="3" y="0" map="desertbase_3_0.tmx"/>
  <cell x="4" y="0" map="desertbase_4_0.tmx"/>
