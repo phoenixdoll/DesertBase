@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<world version="1.0" width="10" height="10">
+<world version="1.0" width="13" height="13">
  <BMPToTMX>
   <tmxexportdir path="."/>
   <rulesfile path=""/>
@@ -32,7 +32,7 @@
  <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
  <propertyenum name="Skin" choices="White,Black" multi="false"/>
  <propertyenum name="RoomTone" choices="Generic,Barn,Mall,Warehouse,Prison,Church,Office,Factory" multi="false"/>
- <propertyenum name="Professions" choices="unemployed" multi="true"/>
+ <propertyenum name="Professions" choices="all,unemployed,policeofficer,constructionworker,securityguard,parkranger,fireofficer" multi="true"/>
  <propertydef name="Direction" default="N" enum="Direction"/>
  <propertydef name="FaceDirection" default="true"/>
  <propertydef name="WaterDirection" default="0.0"/>
@@ -87,7 +87,7 @@
  </template>
  <template name="SpawnPoint">
   <description>This template holds the default set of properties for all spawn points in the world.</description>
-  <property name="Professions" value=""/>
+  <property name="Professions" value="all"/>
  </template>
  <objecttype name="TownZone"/>
  <objecttype name="Forest"/>
@@ -226,10 +226,10 @@
   <object group="Vegitation" type="Vegitation" x="162" y="0" level="0" width="3" height="37"/>
   <object group="Nav" type="Nav" x="162" y="37" level="0" width="3" height="5"/>
   <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="182" y="102" level="0" width="21" height="4"/>
-  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="191" y="92" level="0" width="12" height="4"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="191" y="91" level="0" width="12" height="4"/>
   <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="180" y="81" level="0" width="4" height="15"/>
   <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="175" y="81" level="0" width="4" height="15"/>
-  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="196" y="54" level="0" width="8" height="3"/>
+  <object name="parkingstall" group="ParkingStall" type="ParkingStall" x="196" y="55" level="0" width="8" height="3"/>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="50" y="38" level="0" width="12" height="4"/>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="50" y="51" level="0" width="3" height="4"/>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="67" y="63" level="0" width="8" height="3"/>
@@ -792,43 +792,43 @@
   <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="564" y="133" level="0" width="36" height="15"/>
   <object type="SpawnPoint" x="105" y="40" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="50" y="42" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="34" y="55" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="115" y="179" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="115" y="165" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="135" y="219" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="273" y="204" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="241" y="181" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="271" y="265" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
   <object type="SpawnPoint" x="237" y="25" level="0" width="1" height="1">
    <template name="SpawnPoint"/>
-   <property name="Professions" value="unemployed"/>
+   <property name="Professions" value=""/>
   </object>
  </cell>
  <cell x="1" y="8" map="desertbase_1_8.tmx">
@@ -920,4 +920,21 @@
  <cell x="7" y="9" map="desertbase_7_9.tmx"/>
  <cell x="8" y="9" map="desertbase_8_9.tmx"/>
  <cell x="9" y="9" map="desertbase_9_9.tmx"/>
+ <cell x="11" y="11" map="../../../../Mount-Aza/Mountain/tmxworld/grass_0_0.tmx">
+  <lot x="99" y="14" level="1" width="151" height="201" map="../../../../buildings/aza mountain cave/cave1.tbx"/>
+  <lot x="102" y="76" level="2" width="101" height="101" map="../../../../buildings/aza mountain cave/cave2.tbx"/>
+  <lot x="201" y="143" level="3" width="9" height="12" map="../../../../buildings/aza mountain cave/CabinAza.tbx"/>
+  <lot x="203" y="153" level="3" width="2" height="2" map="../../../../buildings/aza mountain cave/lot_outhouse_small_01.tbx"/>
+  <lot x="180" y="84" level="4" width="16" height="16" map="../../../../buildings/aza mountain cave/cave3.tbx"/>
+  <object group="DeepForest" type="DeepForest" x="1" y="0" level="0" width="299" height="299"/>
+  <object group="DeepForest" type="DeepForest" x="32" y="15" level="1" width="248" height="231"/>
+  <object group="DeepForest" type="DeepForest" x="40" y="31" level="2" width="226" height="191"/>
+  <object type="SpawnPoint" x="204" y="147" level="3" width="1" height="1"/>
+  <object group="DeepForest" type="DeepForest" x="67" y="46" level="3" width="188" height="161"/>
+  <object group="DeepForest" type="DeepForest" x="76" y="58" level="4" width="181" height="141"/>
+  <object group="DeepForest" type="DeepForest" x="87" y="74" level="5" width="112" height="95"/>
+  <object group="DeepForest" type="DeepForest" x="107" y="92" level="6" width="46" height="43"/>
+  <object group="DeepForest" type="DeepForest" x="112" y="93" level="7" width="31" height="27"/>
+  <object group="DeepForest" type="DeepForest" x="173" y="266" level="7" width="1" height="1"/>
+ </cell>
 </world>
