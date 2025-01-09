@@ -136,7 +136,11 @@
    <template name="ParkingStallN"/>
   </object>
  </cell>
- <cell x="2" y="0" map="desertbase_2_0.tmx"/>
+ <cell x="2" y="0" map="desertbase_2_0.tmx">
+  <property name="EntireBuilding" value="false"/>
+  <lot x="80" y="80" level="1" width="21" height="21" map="../../../Building Pool/phoenixdoll/undergroundHome.tbx"/>
+  <object name="testTown" group="TownZone" type="TownZone" x="49" y="52" level="1" width="53" height="52"/>
+ </cell>
  <cell x="3" y="0" map="desertbase_3_0.tmx"/>
  <cell x="4" y="0" map="desertbase_4_0.tmx"/>
  <cell x="5" y="0" map="desertbase_5_0.tmx"/>
